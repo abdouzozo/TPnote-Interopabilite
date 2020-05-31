@@ -3,7 +3,6 @@ package metierExo2;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.xml.crypto.Data;
 
 public class Plantation implements Serializable {
 	private long id;
@@ -16,7 +15,7 @@ public class Plantation implements Serializable {
 	}
 	public void setId(long id) {
 		this.id = id;
-	}
+	} 
 	public Date getDate() {
 		return date;
 	}
@@ -51,6 +50,10 @@ public class Plantation implements Serializable {
 	public Plantation() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+	
+	public String toString() {
+		return "" + getId()  + "  " + getDate() + "  " + getParcelle() + "  " + getNomCommun() + "  " + getFamille() + "  ";
 	}
 	
 	
