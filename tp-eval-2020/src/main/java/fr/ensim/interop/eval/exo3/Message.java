@@ -33,4 +33,8 @@ public class Message {
 		// TODO Auto-generated constructor stub
 	}
 	
+	public String toString() {
+		return "content : " + getContent() + "//\\ dateTime : " + getDateTime() + "//\\\\ sender : " + getSender();
+	}
+	
 	}
