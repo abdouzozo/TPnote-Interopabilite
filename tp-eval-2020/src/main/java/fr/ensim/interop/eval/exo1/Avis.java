@@ -114,7 +114,7 @@ public class Avis {
 		return refProduit;
 	}
 	public void setRefProduit(String refProduit) {
-		if(!this.refFourniss.matches("[a-zA-Z0-9]+") || this.refFourniss.length() > 20)
+		if(!this.refProduit.matches("[a-zA-Z0-9]+") || this.refProduit.length() > 20)
 			throw new IllegalArgumentException("la référence est incorrect");
 		this.refProduit = refProduit;
 	}

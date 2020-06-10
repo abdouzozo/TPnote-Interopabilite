@@ -10,7 +10,7 @@ public class ClientWS {
 		int nbAvisFourniss = stup.enregistrerAvis("74", 7, "ceci est mon commentaire", "14");
 		System.out.println("resultat de la commande est : " + nbAvisFourniss);
 		
-		ArrayList<Avis> resultList = (ArrayList<Avis>) stup.listerAvis("74");
+		ArrayList<Avis> resultList = (ArrayList<Avis>) stup.listerAvis("147");
 		
 		for(int i=0; i < resultList.size(); i++) {
 			System.out.println("Avis " + i + " : refProduit = " + resultList.get(i).getRefProduit()
